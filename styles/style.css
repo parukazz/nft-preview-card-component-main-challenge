@@ -1,0 +1,194 @@
+/* RESET CSS */
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ===================== */
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--very-dark-blue-bg);
+}
+
+/* ===================== */
+
+/* variables */
+
+:root {
+
+  /* -- COLORS -- */
+
+  /* primary */
+  --soft-blue: hsla(215, 51%, 70%, .7);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* neutral */
+  --very-dark-blue-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  /* -- TYPOGRAPHY -- */
+
+  /* body copy */
+  --fs: 18px;
+
+  /* weight */
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-600: 600;
+
+}
+
+/* ======================= */
+
+.card {
+  background: var(--very-dark-blue-card);
+  margin-block: 50px;
+  margin-inline: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, .4) 0px 8px 24px;
+  padding: 25px;
+}
+
+.card-img {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+}
+
+.card-title {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: var(--fw-600);
+  margin-top: 25px;
+}
+
+.card-text {
+  color: var(--soft-blue);
+  font-weight: var(--fw-400);
+  margin-top: 20px;
+  line-height: 26px;
+  font-size: var(--fs);
+}
+
+.price-box {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 20px;
+  border-bottom: 2px solid var(--very-dark-blue-line);
+  padding-bottom: 20px;
+}
+
+.card-eth, .card-time {
+  display: flex;
+  gap: 10px;
+}
+
+
+.card-eth span {
+  color: var(--cyan);
+  font-weight: var(--fw-400);
+  font-size: 18px;
+}
+
+.card-time span {
+  color: var(--soft-blue);
+  white-space: nowrap;
+}
+
+.author {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.avatar {
+  width: 30px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.author p {
+  color: var(--soft-blue);
+}
+
+.author p span {
+  color: var(--white);
+}
+
+
+@media (min-width: 768px) {
+
+  .container {
+    width: 400px;
+    margin-inline: auto;
+  }
+
+  .attribution {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    padding-block: 20px;
+  }
+
+}
+
+/* ======================= */
+
+/* ===== Footer ===== */
+.attribution { font-size: 11px; text-align: center; color: var(--white); }
+.attribution a { color: var(--cyan); }
